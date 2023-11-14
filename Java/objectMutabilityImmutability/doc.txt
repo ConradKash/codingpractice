@@ -1,0 +1,14 @@
+Object immutability refers to the property of an object whose state cannot be modified after it has been created. 
+Examples of immutable objects in Java include String, Integer, and other wrapper classes. 
+Once an object of these classes is created, its state cannot be changed.
+
+NB: We create an immutable class then we implement object immutability
+
+how we create an immutable class
+1. Declaring all fields private so that direct access is not allowed.
+2. Not providing setter methods for variables.
+3. Making all mutable fields final so that they can be assigned only once.
+4. Initializing all fields via a constructor making them final.
+5. Performing cloning of objects in the getter methods to return a copy rather than returning the actual object reference.
+
+Strong Immutability( All fields in a class final ie methods, objects and firlds) and Weak Immutability
