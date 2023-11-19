@@ -10,5 +10,8 @@ public class index {
         //now here we change the name of the mutableString using the set function
         objM.setMutableString("Lets Change the test of the class");
         System.out.println(objM.getMutableString());
+
+        //Trying to edit the immutable object
+        //objI.setMutableString("IT brings so i have commented it oout")
     }
 }
