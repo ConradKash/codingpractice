@@ -54,7 +54,7 @@ public class axiomInArrays{
             charArray[i] = firstString.charAt(i);
             System.out.print(charArray[i]);
         }
-        
+
 
     }
 
