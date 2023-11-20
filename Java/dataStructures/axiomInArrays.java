@@ -47,6 +47,15 @@ public class axiomInArrays{
             System.out.println(arr[i]);
 
         }
+
+        String firstString = "Hello";
+        Character[] charArray = new Character[firstString.length()];
+        for(int i=0; i<firstString.length(); i++){
+            charArray[i] = firstString.charAt(i);
+            System.out.print(charArray[i]);
+        }
+        
+
     }
 
 }
