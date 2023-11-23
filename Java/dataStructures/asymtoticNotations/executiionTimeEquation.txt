@@ -37,11 +37,14 @@ T(n) = O(log n)(O(n))
 T(n) = O(nlog n)
 
 Big O Notation (O): This notation describes the worst-case scenario, or the maximum amount of time an operation will take to complete. 
+--The worst case scenario occurs when the target data is located at either end of the list or is not present in the list at all
 = O(n log n).
 
 Omega Notation (Ω): This notation describes the best-case scenario, or the minimum amount of time an operation will take to complete.
 if the element to be searched is at the middle of the list, then the getNodeDataAt method will take O(n/2) time
+--The best case scenario for the searchData method occurs when the target data is located at the middle of the list
 =Ω(n)
 
 Theta notation (Θ) represents the average-case scenario.
+--On average, we can expect the target data to be located somewhere in the middle of the list. 
 =Θ(n log n).
