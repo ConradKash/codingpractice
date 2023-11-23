@@ -1,0 +1,23 @@
+public boolean searchData(String data) {
+    Node current = head;
+    int low = 0;
+    int high = getSize() - 1;
+
+    while (low <= high) {
+        int mid = low + (high - low) / 2;
+        String midData = getNodeDataAt(mid);
+        System.out.println("Mid data 1");
+        System.out.println(midData);
+
+        if (midData.equals(data)) {
+            return true;
+        } else if (midData.compareTo(data) < 0) {
+            low = mid + 1;
+
+        } else {
+            high = mid - 1;
+        }
+    }
+
+    return false;
+}

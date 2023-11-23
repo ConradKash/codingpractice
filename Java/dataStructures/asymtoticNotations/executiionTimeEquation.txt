@@ -1,0 +1,47 @@
+`public boolean searchData(String data) {
+    Node current = head;
+    int low = 0;
+    int high = getSize() - 1;
+
+    while (low <= high) {
+        int mid = low + (high - low) / 2;
+        String midData = getNodeDataAt(mid);
+        System.out.println("Mid data 1");
+        System.out.println(midData);
+
+        if (midData.equals(data)) {
+            return true;
+        } else if (midData.compareTo(data) < 0) {
+            low = mid + 1;
+
+        } else {
+            high = mid - 1;
+        }
+    }
+
+    return false;
+}
+private String getNodeDataAt(int index) {
+    Node current = head;
+    for (int i = 0; i < index; i++) {
+        current = current.next;
+    }
+    return current.data;
+}
+`
+The execution time equation is a mathematical representation of the time complexity of an algorithm. 
+While loop: O(logn)
+getNodeDataAt: O(n)
+But since the getNodeDataAt is inside the while loop 
+T(n) = O(log n)(O(n))
+T(n) = O(nlog n)
+
+Big O Notation (O): This notation describes the worst-case scenario, or the maximum amount of time an operation will take to complete. 
+= O(n log n).
+
+Omega Notation (Ω): This notation describes the best-case scenario, or the minimum amount of time an operation will take to complete.
+if the element to be searched is at the middle of the list, then the getNodeDataAt method will take O(n/2) time
+=Ω(n)
+
+Theta notation (Θ) represents the average-case scenario.
+=Θ(n log n).
