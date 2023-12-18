@@ -28,7 +28,6 @@ package dataStructures.asymtoticNotations;
         }
 
         public boolean searchData(String data) {
-            Node current = head;
             int low = 0;
             int high = getSize() - 1;
 
