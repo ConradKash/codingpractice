@@ -1,0 +1,5 @@
+# Created by pytest automatically.
+*pycache*/
+*.pytest_cache*/
+*.vscode/
+

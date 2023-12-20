@@ -16,7 +16,7 @@ def mergeAlternatively(nums1, nums2):
     while j < len(nums2):
         res.append(nums2[j])
         j += 1
-    
+
     results = "".join(res)    
     print(results)
     return results
