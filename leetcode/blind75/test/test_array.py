@@ -21,3 +21,4 @@ def test_flowerbed():
     assert canPlaceFlower([1,0,0,0,1,0,0,0,0,0,1,0,0], 4) == True
     assert canPlaceFlower([0,0,0,0], 2) == True
     assert canPlaceFlower([0], 1) == True
+    assert canPlaceFlower([0,0], 1) == True
