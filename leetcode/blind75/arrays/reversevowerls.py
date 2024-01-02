@@ -18,5 +18,3 @@ def reverseVowels(s):
             j -= 1
 
     return "".join(s)
-   
-print(reverseVowels('leetcode'))
