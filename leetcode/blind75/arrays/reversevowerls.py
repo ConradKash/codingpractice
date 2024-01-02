@@ -1,12 +1,22 @@
 def reverseVowels(s):
-    vowels = ['a','e','i','o','u','A','E','I','O','U']
-    sarray = list(s)
-    for i in range(len(sarray)):
-        if sarray[i] in vowels:
-            for j in range(len(sarray)-1,i,-1):
-                if sarray[j] in vowels:
-                    sarray[i], sarray[j] = sarray[j], sarray[i]
-                    break
-    return ''.join(sarray)
+    vowels = set("aeiouAEIOU")
+    i, j = 0, len(s) - 1
+    s = list(s)  
 
-print(reverseVowels('hello'))
+    while i < j:
+        if s[i] in vowels and s[j] in vowels:
+            
+            s[i], s[j] = s[j], s[i]
+            i += 1
+            j -= 1
+        elif s[i] in vowels:
+            j -= 1
+        elif s[j] in vowels:
+            i += 1
+        else:
+            i += 1
+            j -= 1
+
+    return "".join(s)
+   
+print(reverseVowels('leetcode'))

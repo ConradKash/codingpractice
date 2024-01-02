@@ -2,6 +2,7 @@ from leetcode.blind75.arrays.mergearray import mergeAlternatively
 from leetcode.blind75.arrays.gcd_of_arrays import gcdOfStrings
 from leetcode.blind75.arrays.candiesDistribution import candiesDistribution
 from leetcode.blind75.arrays.flower_gardening import canPlaceFlower
+from leetcode.blind75.arrays.reversevowerls import reverseVowels
 
 def test_mergeAlternatively():
     assert mergeAlternatively(['a','f','g'], ['i','j','k']) == "aifjgk"
@@ -22,3 +23,11 @@ def test_flowerbed():
     assert canPlaceFlower([0,0,0,0], 2) == True
     assert canPlaceFlower([0], 1) == True
     assert canPlaceFlower([0,0], 1) == True
+    
+def test_reverseVowels():
+    assert reverseVowels('hello') == 'holle'
+    assert reverseVowels('leetcode') == 'leotcede'
+    assert reverseVowels('aA') == 'Aa'
+    assert reverseVowels('.,') == '.,'
+    assert reverseVowels('a') == 'a'
+    assert reverseVowels('') == ''
