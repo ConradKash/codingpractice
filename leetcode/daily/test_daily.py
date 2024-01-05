@@ -1,6 +1,7 @@
 from leetcode.daily.day1 import findContentChildren
 from leetcode.daily.day2 import findMatrix
 from leetcode.daily.day3 import laser_bank
+from leetcode.daily.day4 import minOperations
 
 def test_findContentChildren():
     assert findContentChildren([], []) == 0
@@ -22,3 +23,8 @@ def test_laser_bank():
     assert laser_bank(["101","001","101","101","010","101","001","101","101","010"]) == 22
     assert laser_bank(["101","001","101","101","010","101","001","101","101","010","101","001","101","101","010"]) == 34
     
+def test_minOperations():
+    assert minOperations([1,1,1]) == 1
+    assert minOperations([1,1,2,2,2,3,3,3,4,4,4]) == 4
+    assert minOperations([1,2,3,4,5,6]) == -1
+    assert minOperations([1,10,100,1000]) == -1
