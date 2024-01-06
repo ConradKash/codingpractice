@@ -3,6 +3,7 @@ from leetcode.daily.day2 import findMatrix
 from leetcode.daily.day3 import laser_bank
 from leetcode.daily.day4 import minOperations
 from leetcode.daily.day5 import lengthOfLIS
+from leetcode.daily.day6 import jobScheduling
 
 def test_findContentChildren():
     assert findContentChildren([], []) == 0
@@ -37,3 +38,11 @@ def test_lengthOfLIS():
     assert lengthOfLIS([4,10,4,3,8,9]) == 3
     assert lengthOfLIS([1,3,6,7,9,4,10,5,6]) == 6
     assert lengthOfLIS([10,9,2,5,3,7,101,18]) == 4
+    
+def test_jobScheduling():
+    assert jobScheduling([1,2,3,3], [3,4,5,6], [50,10,40,70]) == 120
+    assert jobScheduling([1,2,3,4,6], [3,5,10,6,9], [20,20,100,70,60]) == 150
+    assert jobScheduling([1,1,1], [2,3,4], [5,6,4]) == 6
+    assert jobScheduling([1,2,3,4,6], [3,5,10,6,9], [20,20,100,70,60]) == 150
+    assert jobScheduling([1,1,1], [2,3,4], [5,6,4]) == 6
+    assert jobScheduling([1,2,3,4,6], [3,5,10,6,9], [20,20,100,70,60]) == 150
