@@ -46,3 +46,8 @@ def test_jobScheduling():
     assert jobScheduling([1,2,3,4,6], [3,5,10,6,9], [20,20,100,70,60]) == 150
     assert jobScheduling([1,1,1], [2,3,4], [5,6,4]) == 6
     assert jobScheduling([1,2,3,4,6], [3,5,10,6,9], [20,20,100,70,60]) == 150
+    assert jobScheduling([1,1,1], [2,3,4], [5,6,4]) == 6
+    assert jobScheduling([1,2,3,4,6], [3,5,10,6,9], [20,20,100,70,60]) == 150
+    assert jobScheduling([1,1,1], [2,3,4], [5,6,4]) == 6
+    assert jobScheduling([1,2,3,4,6], [3,5,10,6,9], [20,20,100,70,60]) == 150
+    assert jobScheduling([1,1,1], [2,3,4], [5,6,4]) == 6
