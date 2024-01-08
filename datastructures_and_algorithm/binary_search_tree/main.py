@@ -1,5 +1,5 @@
-from binary_search_tree.inserting_nodes import insert
-from datastructures_and_algorithm.binary_search_tree.transversal.inorder import inorder
+from inserting_nodes import insert
+from transversal.inorder import inorder
 if __name__ == '__main__':
     root = None
     
