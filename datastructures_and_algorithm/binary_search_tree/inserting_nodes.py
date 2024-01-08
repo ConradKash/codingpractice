@@ -29,18 +29,10 @@ if __name__ == '__main__':
     root = None
     
     # Inserting elements in the tree
-    root = insert(root, 50)
-    insert(root, 30)
-    insert(root, 20)
-    insert(root, 40)
-    insert(root, 70)
-    insert(root, 60)
-    insert(root, 80)
-        
-    # keys = [30, 20, 40, 70, 60, 80]
-    # for key in keys:
-    #     print("1")
-    #     insert(root, key)
+    root = insert(root, 50)        
+    keys = [30, 20, 40, 70, 60, 80]
+    for key in keys:
+        insert(root, key)
         
     # Tranversing the tree
     inorder(root)
