@@ -2,5 +2,5 @@
 def inorder(root):
     if root is not None:
         inorder(root.left)
-        print(root.key, end="\t")
+        print(root.key, end=" ")
         inorder(root.right) 
