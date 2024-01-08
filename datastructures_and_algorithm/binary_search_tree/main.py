@@ -1,5 +1,8 @@
 from inserting_nodes import insert
 from transversal.inorder import inorder
+from transversal.postorder import postorder
+from transversal.preorder import preorder
+
 if __name__ == '__main__':
     root = None
     
@@ -10,4 +13,10 @@ if __name__ == '__main__':
         insert(root, key)
         
     # Tranversing the tree
+    
+    print("Inorder Tranversal: ")
     inorder(root)
+    print("Preorder Tranversal: ")
+    preorder(root)
+    print("Postorder Tranversal: ")
+    postorder(root)

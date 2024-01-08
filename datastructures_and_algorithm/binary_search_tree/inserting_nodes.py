@@ -1,4 +1,3 @@
-from newBST import newNode
 class Node:
     def __init__(self, key):
         self.key = key
@@ -9,7 +8,7 @@ class Node:
 def insert(node, key):
     # Checking if there elements in the tree
     if node is None:
-        return newNode(key)
+        return Node(key)
     
     if key < node.key:
         node.left = insert(node.left, key)
