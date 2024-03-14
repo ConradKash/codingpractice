@@ -24,7 +24,7 @@ func lengthconversion() {
 	const ft = 0.3048
 	var c float64
 	fmt.Print("Enter the length in feet: ")
-	fmt.Scanf("%f", &c)
+	fmt.Scanln("%f", &c)
 	output := c * ft
 	fmt.Println(output)
 }
