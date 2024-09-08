@@ -1,5 +1,0 @@
-Divide and conqure
-Greedy 
-Dynamic Programming
-BackTracking
-Branching and Bound
