@@ -11,5 +11,5 @@ vet: fmt
 build: vet
 	go build
 
-clean:
+clean: build
 	go clean
