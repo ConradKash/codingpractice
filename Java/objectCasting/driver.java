@@ -10,13 +10,13 @@ public class driver {
         subClassA obj3 = (subClassA) new subClassB(12, "Akampa", "Worker", 12900);
         // Explicit Casting
         // Demotion
-        //subClassA obj4 = (subClassA) new superClass(13,"Donald");
+        // subClassA obj4 = (subClassA) new superClass(13,"Donald");
 
         //Method calling
         obj1.introduction();
         obj2.introduction();
         obj3.introduction();
-        //obj4.introduction2();
+        // obj4.introduction();
 
 
     }
