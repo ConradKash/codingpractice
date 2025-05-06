@@ -62,13 +62,13 @@ let cid: any = 1;
 
 let customerID = <number>cid;
 
-let customerID2 = <boolean>cid ;
+let customerID2 = <boolean>cid;
 let customerID3: string = cid as string;
 
-console.log(typeof(customerID));
-console.log(typeof(customerID2));
-console.log(typeof(customerID3));
-console.log(typeof(cid));
+console.log(typeof customerID);
+console.log(typeof customerID2);
+console.log(typeof customerID3);
+console.log(typeof cid);
 
 // Functions
 
