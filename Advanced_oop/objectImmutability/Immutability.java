@@ -1,5 +1,3 @@
-import java.io.*;
-
 public final class Immutability{
     String var1;
     final String var2 = "test";
@@ -19,7 +17,7 @@ public final class Immutability{
 
         m(s1);
 
-        s1.replace("str", "new");
+        s1 = s1.replace("str", "new");
         m(s1);
 
 
@@ -27,10 +25,12 @@ public final class Immutability{
 
         obj.var1 = "Here we go";
         // obj.var2 = "Here we go 2";
+        System.err.println(obj.var1);
+        obj.setVar1("Here we go 22");
 
-        System.out.println("testing 12");
+        System.err.println(obj.var1);
+
         m(obj.var1);
-        System.out.println("testing 12");
         System.out.println(obj.var1);
         System.out.println(obj.var2);
     }

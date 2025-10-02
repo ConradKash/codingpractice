@@ -26,7 +26,6 @@
 - An algorithm is a sequence of finite unique computational steps that turn input into output
 
 #### Characteristics of an algorithm
-
     - input
     - output
     - finite
