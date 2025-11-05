@@ -1,6 +1,5 @@
 package lecture_2.java;
 import java.util.*;
-import lecture_2.java.B;
 
 public class Main {
     public static void main(String[] args) {
