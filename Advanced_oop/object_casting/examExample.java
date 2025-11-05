@@ -24,8 +24,8 @@ public class examExample {
         
         k.name = "Care";
         // k.area = "kanyanya";
-
-        animal cm = (cat)new cat();
+        System.out.println("This is normal type casting");
+        animal cm = new cat();
         cm.sound();
         
         k.sound();
