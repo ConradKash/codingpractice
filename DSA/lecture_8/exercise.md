@@ -8,6 +8,7 @@
 - Visits all nodes at current depth before moving deeper
 - Time Complexity: O(n)
 - Space Complexity: O(w) where w is maximum width
+####  Example is Facebook/LinkedIn suggesting "People You May Know"
 
 ### Depth First Traversal (DFS)
 - Explores tree by going as deep as possible first
@@ -15,6 +16,8 @@
 - Three variants: Pre-order, In-order, Post-order
 - Time Complexity: O(n)
 - Space Complexity: O(h) where h is height
+
+####  Example is Searching for a file on your computer
 
 ## Relationship to Design Strategies
 
