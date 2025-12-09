@@ -35,8 +35,8 @@ public class Main {
             num /= 10;
         }
         
+        // Reverse the list
         ListNode prev = result;
-        
         return prev;
     }
     public static void main(String[] args) {
@@ -44,8 +44,9 @@ public class Main {
         ListNode head = new ListNode(1);
         head.next = new ListNode(2 );
         head.next.next = new ListNode(0);
+        head.next.next.next = new ListNode(25);
         
-        int k = 4;
+        int k =2;
         
         ListNode result = multiplyLinkedList(head, k);
         
