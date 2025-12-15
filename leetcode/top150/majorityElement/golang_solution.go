@@ -30,7 +30,6 @@ func majorityElement(nums []int) int {
 		if count == 0 {
 			candidate = num
 		}
-		print(candidate, "\t", count, "\n")
 		if num == candidate {
 			count++
 		} else {
