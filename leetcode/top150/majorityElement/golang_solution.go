@@ -30,6 +30,7 @@ func majorityElement(nums []int) int {
 		if count == 0 {
 			candidate = num
 		}
+		print(candidate, "\t", count, "\n")
 		if num == candidate {
 			count++
 		} else {
@@ -41,12 +42,12 @@ func majorityElement(nums []int) int {
 }
 
 func main() {
-	nums := []int{3, 2, 3}
-	result := majorityElement(nums)
-	// result should be 3
-	println(result)
+	// nums := []int{3, 2, 3}
+	// result := majorityElement(nums)
+	// // result should be 3
+	// println(result)
 
-	nums2 := []int{2, 2, 1, 1, 1, 2, 2}
+	nums2 := []int{3, 2, 2, 2, 1, 1, 1, 2, 2}
 	result2 := majorityElement(nums2)
 	// result2 should be 2
 	println(result2)
