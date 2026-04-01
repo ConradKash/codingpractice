@@ -1,0 +1,28 @@
+services:
+  db:
+    container_name: postgis_db
+    image: postgis/postgis:15-3.4
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_DB=geodjango_db
+      - POSTGRES_USER=root
+      - POSTGRES_PASSWORD=root
+    ports:
+      - "5432:5432"
+
+  web:
+    container_name: geo_backend
+    build: .
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - .:/code
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_URL=postgis://root:root@db:5432/geodjango_db
+    depends_on:
+      - db
+
+volumes:
+  postgres_data:
